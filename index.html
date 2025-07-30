@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>PAC-MAN</h1>
+            <div class="game-info">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="lives">Lives: <span id="lives">3</span></div>
+            </div>
+        </div>
+        
+        <div id="game-board"></div>
+        
+        <div class="game-controls">
+            <p>Use ARROW KEYS or WASD to move Pac-Man</p>
+            <button id="start-btn" onclick="startGame()">Start Game</button>
+            <button id="restart-btn" onclick="restartGame()" style="display: none;">Restart Game</button>
+        </div>
+        
+        <div id="game-over" class="game-message" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+        </div>
+        
+        <div id="game-win" class="game-message" style="display: none;">
+            <h2>You Won!</h2>
+            <p>Congratulations! Score: <span id="win-score">0</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
